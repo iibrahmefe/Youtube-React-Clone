@@ -3,9 +3,9 @@
 export default function VideoGrid(){
     return (
         <div className="flex flex-col gap-2">
-            <a href="#" className="relative aspect-video bg-transparent  rounded-xl">
-                <img  alt="" src="https://wallpapers.com/images/hd/aesthetic-youtube-wordmark-logo-vevshkgds6xxk7lr.jpg" className="block w-full h-full object-cover rounded-xl " />
-                <div className="absolute bottom-1 right-1 bg-black/10 text-sm ">24.80</div>
+            <a href="#" className="relative aspect-video   rounded">
+                <img  alt="" src="https://wallpapers.com/images/hd/aesthetic-youtube-wordmark-logo-vevshkgds6xxk7lr.jpg" className="block w-full h-full object-cover rounded " />
+                <div className="absolute bottom-1 right-1 bg-black/60 text-sm  p-px px-1 rounded-sm ">21.80</div>
             </a>
             <div className="flex gap-2">
                 <a href="#" className="flex-shrink-0">

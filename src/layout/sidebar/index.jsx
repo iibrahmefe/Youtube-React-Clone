@@ -11,7 +11,7 @@ export default function Sidebar() {
         //    <aside className="sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col flex ml-1 max-w-[]">
         //     asekqwjelkqwj
         //    </aside>
-        <aside className="w-56 lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden px-2 flex flex-col" >
+        <aside className="lg:w-56 hidden text-nowrap border-r lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden px-2 lg:flex flex-col" >
             {SidebarList.map((item) => (
                 <a href={item.link} key={item} className="w-full flex items-center rounded-lg gap-6 p-3 hover:bg-white/10 transition-colors">
                     {item.icon}  {item.title}
