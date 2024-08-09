@@ -1,17 +1,42 @@
-import { NavLink } from "react-router-dom";
-import { MainMenu, SidebarListThird,SidebarList, SidebarListSecond } from "../../const/const";
+// import { NavLink } from "react-router-dom";
+import { MainMenu, SidebarListThird, SidebarList, SidebarListSecond } from "../../const/const";
 
 import { Subs } from "../../const/const";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowUp } from "react-icons/fa";
 
+import { motion } from "framer-motion";
+
+const sidebar = {
+    hidden: {
+        opacity: 0,
+
+    },
+    visible: {
+        opacity: 1
+    }
+}
+
+const itemlist = {
+    hidden: {
+        opacity: 0,
+
+    },
+    visible: {
+        opacity: 1
+    }
+}
 
 export default function Sidebar() {
     return (
         //    <aside className="sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col flex ml-1 max-w-[]">
         //     asekqwjelkqwj
         //    </aside>
-        <aside className="lg:w-56 hidden text-nowrap border-r lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden px-2 lg:flex flex-col" >
+        <motion.aside
+            initial="hidden"
+            animate="visible"
+            variants={sidebar}
+            className="lg:w-56 hidden text-nowrap  lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden px-2 lg:flex flex-col" >
             {SidebarList.map((item) => (
                 <a href={item.link} key={item} className="w-full flex items-center rounded-lg gap-6 p-3 hover:bg-white/10 transition-colors">
                     {item.icon}  {item.title}
@@ -22,9 +47,11 @@ export default function Sidebar() {
                 Siz< MdKeyboardArrowRight />
             </a>
             {SidebarListSecond.map((item) => (
-                <a href={item.link} key={item} className="w-full flex items-center rounded-lg gap-6 p-3 hover:bg-white/10 transition-colors">
+                <motion.a
+                    variants={itemlist}
+                    href={item.link} key={item} className="w-full flex items-center rounded-lg gap-6 p-3 hover:bg-white/10 transition-colors">
                     {item.icon} {item.title}
-                </a>
+                </motion.a>
             ))}
             <hr className="opacity-30 my-2" />
             <h2 className="p-3 font-semibold text-lg">Abonelikler</h2>
@@ -42,6 +69,6 @@ export default function Sidebar() {
                     {item.icon} {item.title}
                 </a>
             ))}
-        </aside>
+        </motion.aside>
     )
 }

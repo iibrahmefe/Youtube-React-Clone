@@ -1,8 +1,21 @@
 import VideoGrid from "../../components/videogrid/videgrid";
+import { motion } from "framer-motion";
+const container = {
+    visible: {
+        transition: {
+            delayChildren: .5,
+            staggerChildren: 0.09
+        }
+    }
+}
 
 export default function Main() {
     return (
-        <div className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={container}
+            className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
             <VideoGrid />
             <VideoGrid />
             <VideoGrid />
@@ -18,27 +31,6 @@ export default function Main() {
             <VideoGrid />
             <VideoGrid />
             <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-        </div>
+        </motion.div>
     )
 }

@@ -114,7 +114,12 @@ export const SidebarList = [
     },
     {
         title: "Youtube Music",
-        link: "/",
+        link: "/ytmusic",
+        icon: <SiYoutubemusic className="text-[20px]" />,
+    },
+    {
+        title: "Shorts",
+        link: "/Shorts",
         icon: <SiYoutubemusic className="text-[20px]" />,
     },
 ]
@@ -124,12 +129,12 @@ export const SidebarListSecond = [
     {
 
         title: "Kanalınız",
-        link: "/Hesabınız",
+        link: "/channel",
         icon: <BiSolidUserAccount className="text-[20px]" />,
     },
     {
         title: "Geçmiş",
-        link: "/History",
+        link: "/history",
         icon: <RiHistoryFill className="text-[20px]" />,
     },
     {
@@ -144,17 +149,17 @@ export const SidebarListSecond = [
     },
     {
         title: "Daha sonra izle",
-        link: "/dahasonra",
+        link: "/later",
         icon: < MdOutlineWatchLater className="text-[20px]" />,
     },
     {
-        title: "Beğendiğim Videolar",
-        link: "/begendimvideolar",
+        title: "Beğendiklerim",
+        link: "/Likes",
         icon: <AiFillLike className="text-[20px]" />,
     },
     {
         title: "İndirilenler",
-        link: "/indirilenler",
+        link: "/İndirilenler",
         icon: <LiaDownloadSolid className="text-[20px]" />,
     },
 ]

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -20,18 +20,49 @@ body {
   background: hsl(0deg 0% 100% / 8%);
 } */
 
-.icon{
+.icon {
   border-top-right-radius: 999px;
-  border-bottom-right-radius:999px ;
+  border-bottom-right-radius: 999px;
 }
 
-.sidebar{
+.sidebar {
   min-height: calc(100vh - 56px);
 }
 
-.icerik{
-  width:100%;
-  min-height:100vh;
-  margin-left:240px;
+.icerik {
+  width: 100%;
+  min-height: 100vh;
+  margin-left: 240px;
+}
 
+/* Genel kaydırma çubuğu stilleri */
+::-webkit-scrollbar {
+  width: 6px; /* Kaydırma çubuğu genişliği */
+  height: 6px; /* Yatay kaydırma çubuğu yüksekliği */
+}
+
+/* Kaydırma çubuğu kanalı (background) */
+::-webkit-scrollbar-track {
+  background: #0f0f0f; /* Arka plan rengi */
+}
+
+/* Kaydırma çubuğu tutacağı (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #202020; /* Tutacak rengi */
+  border-radius: 3px; /* Yuvarlatılmış köşeler */
+}
+
+/* Kaydırma çubuğu üzerine gelince (hover) */
+::-webkit-scrollbar-thumb:hover {
+  background: #202020; /* Hover sırasında tutacak rengi */
+}
+
+/* Yatay kaydırma çubuğu (opsiyonel) */
+::-webkit-scrollbar-horizontal {
+  height: 12px; /* Yatay kaydırma çubuğu yüksekliği */
+}
+
+/* Kaydırma çubuğu köşesi (hem yatay hem dikey olan durumlar için) */
+::-webkit-scrollbar-corner {
+  background: #202020; /* Köşe arka plan rengi */
 }
