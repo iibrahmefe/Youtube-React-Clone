@@ -1,5 +1,6 @@
 import VideoGrid from "../../components/videogrid/videgrid";
 import { motion } from "framer-motion";
+import {VideoList} from "../../const/const"
 const container = {
     visible: {
         transition: {
@@ -16,21 +17,18 @@ export default function Main() {
             animate="visible"
             variants={container}
             className="grid gap-4 grid-cols-[repeat(auto-fill,minmax(300px,1fr))]">
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
-            <VideoGrid />
+
+                {VideoList.map((video,index)=>(
+                    <VideoGrid key={index} 
+                    title={video.title}
+                    subtitle={video.subtitle}
+                    statics={video.statics}
+                    image={video.image}
+                    duration={video.duration}
+                    />
+                    
+                ))}
+           
         </motion.div>
     )
 }

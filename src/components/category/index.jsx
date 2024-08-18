@@ -1,6 +1,7 @@
 import { Categories } from "../../const/const";
 
 import { motion } from "framer-motion";
+// ! Animate js  code's
 const category = {
     visible: {
         transition: {
@@ -20,6 +21,8 @@ const item = {
         translateY: 0
     }
 }
+// ! Animate js  code's
+
 export default function Category() {
     return (
         <motion.div
@@ -33,7 +36,7 @@ export default function Category() {
                 variants={item}
                 className="flex whitespace-nowrap gap-3 transition-transform w-[max-content] items-center ">
                 {Categories.map((category) => (
-                    <button key={category} className="text-white  py-1 px-3 rounded-lg whitespace-nowrap hover:bg-white/30 bg-white/10 transition-all">{category}</button>
+                    <button key={category} className="px-3 py-1 text-white transition-all rounded-lg whitespace-nowrap hover:bg-white/30 bg-white/10">{category}</button>
                 ))}
             </motion.div>
         </motion.div>

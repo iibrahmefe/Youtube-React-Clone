@@ -4,7 +4,6 @@ import { MainMenu, SidebarListThird, SidebarList, SidebarListSecond } from "../.
 import { Subs } from "../../const/const";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { FaArrowUp } from "react-icons/fa";
-
 import { motion } from "framer-motion";
 
 const sidebar = {
@@ -15,7 +14,7 @@ const sidebar = {
     visible: {
         opacity: 1
     }
-}
+} 
 
 const itemlist = {
     hidden: {
@@ -29,16 +28,13 @@ const itemlist = {
 
 export default function Sidebar() {
     return (
-        //    <aside className="sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex-col flex ml-1 max-w-[]">
-        //     asekqwjelkqwj
-        //    </aside>
         <motion.aside
             initial="hidden"
             animate="visible"
             variants={sidebar}
-            className="lg:w-56 hidden text-nowrap  lg:sticky absolute top-0 overflow-y-auto scrollbar-hidden px-2 lg:flex flex-col" >
-            {SidebarList.map((item) => (
-                <a href={item.link} key={item} className="w-full flex items-center rounded-lg gap-6 p-3 hover:bg-white/10 transition-colors">
+            className="lg:w-56 hidden text-nowrap  lg:sticky  max-h-screen top-0 overflow-auto px-2 lg:flex flex-col" >
+            {SidebarList.map((item,index) => (
+                <a href={item.link} key={index} className="w-full flex items-center rounded-lg gap-6 p-3 hover:bg-white/10 transition-colors">
                     {item.icon}  {item.title}
                 </a>
             ))}

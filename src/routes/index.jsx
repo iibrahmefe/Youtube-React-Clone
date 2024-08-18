@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import AnaSayfa from "../pages/home";
 import Shorts from "../pages/shorts";
 import Abonelikler from "../pages/abobelikler";
 import Channel from "../pages/channel";
@@ -10,6 +9,7 @@ import Videos from "../pages/videos";
 import Later from "../pages/later";
 import Likes from "../pages/likes";
 import Downloads from "../pages/downloads";
+import AnaSayfa from "../pages/home";
 
 const routes = createBrowserRouter([
     {
@@ -53,7 +53,7 @@ const routes = createBrowserRouter([
         element: <Likes />
     },
     {
-        path:'/İndirilenler',
+        path:'/indirilenler',
         element: <Downloads />
     },
 ])

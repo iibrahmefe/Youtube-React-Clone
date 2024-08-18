@@ -9,7 +9,7 @@ import { MdAccountCircle } from "react-icons/md";
 
 export default function Navbar() {
     return (
-        <div className="flex gap-10 lg:gap-20 items-center justify-between pt-2 mb-6 mx-4">
+        <div className="flex gap-10 lg:gap-20 items-center sticky z-10 top-0 bg-[#0f0f0f] justify-between pt-2 mb-6 mx-4">
             <Logo />
             <Searchbar />
             <div className="max-w-[255px] w-full h-full flex items-center justify-center ">
