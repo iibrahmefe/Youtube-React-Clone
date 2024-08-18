@@ -104,7 +104,7 @@ export const Categories = [
 
 export const SidebarList = [
     {
-        title: "Home",
+        title: "Ana Sayfa",
         link: "/",
         icon: <IoMdHome className="text-[20px]" />,
     },
@@ -298,6 +298,286 @@ export const VideoList = [
         statics: "1,3M görüntüleme • 2 ay önce",
         image: "https://via.placeholder.com/400x300.png?text=Deploying+Web+App",
         duration: "17:55"
-    }
+    },
+    {
+        title: "Web Geliştirmenin Geleceği",
+        subtitle: "Web Teknolojilerindeki Son Trendler",
+        statics: "1,2M görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Web+Development",
+        duration: "12:34"
+    },
+    {
+        title: "JavaScript ES6 Özellikleri",
+        subtitle: "Modern JavaScript'e Derinlemesine Bir Bakış",
+        statics: "890K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=JavaScript+ES6",
+        duration: "09:45"
+    },
+    {
+        title: "CSS Grid Ustalığı",
+        subtitle: "Kolay Düzen Tasarımı",
+        statics: "500K görüntüleme • 3 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=CSS+Grid",
+        duration: "15:20"
+    },
+    {
+        title: "React'a Giriş",
+        subtitle: "React.js ile Başlarken",
+        statics: "1,5M görüntüleme • 1 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=React+Introduction",
+        duration: "18:10"
+    },
+    {
+        title: "Yeni Başlayanlar İçin Python",
+        subtitle: "Python'u Baştan Öğren",
+        statics: "2M görüntüleme • 3 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Python+for+Beginners",
+        duration: "25:30"
+    },
+    {
+        title: "API'leri Anlamak",
+        subtitle: "Frontend'inizi Backend ile Bağlama",
+        statics: "750K görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Understanding+APIs",
+        duration: "10:15"
+    },
+    {
+        title: "Duyarlı Web Tasarımı",
+        subtitle: "Her Cihazda Çalışan Web Siteleri Yapmak",
+        statics: "1,8M görüntüleme • 5 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=Responsive+Web+Design",
+        duration: "14:05"
+    },
+    {
+        title: "Node.js ile RESTful API Oluşturma",
+        subtitle: "Yeni Başlayanlar İçin Adım Adım Kılavuz",
+        statics: "620K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Node.js+API",
+        duration: "20:40"
+    },
+    {
+        title: "İleri JavaScript Konseptleri",
+        subtitle: "Kapatmalar, Promiseler ve Async/Await Anlamak",
+        statics: "900K görüntüleme • 4 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Advanced+JavaScript",
+        duration: "22:50"
+    },
+    {
+        title: "İlk Web Uygulamanızı Yayımlamak",
+        subtitle: "Web Hosting'e Yeni Başlayanlar İçin Kılavuz",
+        statics: "1,3M görüntüleme • 2 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Deploying+Web+App",
+        duration: "17:55"
+    },
+    {
+        title: "Web Geliştirmenin Geleceği",
+        subtitle: "Web Teknolojilerindeki Son Trendler",
+        statics: "1,2M görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Web+Development",
+        duration: "12:34"
+    },
+    {
+        title: "JavaScript ES6 Özellikleri",
+        subtitle: "Modern JavaScript'e Derinlemesine Bir Bakış",
+        statics: "890K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=JavaScript+ES6",
+        duration: "09:45"
+    },
+    {
+        title: "CSS Grid Ustalığı",
+        subtitle: "Kolay Düzen Tasarımı",
+        statics: "500K görüntüleme • 3 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=CSS+Grid",
+        duration: "15:20"
+    },
+    {
+        title: "React'a Giriş",
+        subtitle: "React.js ile Başlarken",
+        statics: "1,5M görüntüleme • 1 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=React+Introduction",
+        duration: "18:10"
+    },
+    {
+        title: "Yeni Başlayanlar İçin Python",
+        subtitle: "Python'u Baştan Öğren",
+        statics: "2M görüntüleme • 3 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Python+for+Beginners",
+        duration: "25:30"
+    },
+    {
+        title: "API'leri Anlamak",
+        subtitle: "Frontend'inizi Backend ile Bağlama",
+        statics: "750K görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Understanding+APIs",
+        duration: "10:15"
+    },
+    {
+        title: "Duyarlı Web Tasarımı",
+        subtitle: "Her Cihazda Çalışan Web Siteleri Yapmak",
+        statics: "1,8M görüntüleme • 5 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=Responsive+Web+Design",
+        duration: "14:05"
+    },
+    {
+        title: "Node.js ile RESTful API Oluşturma",
+        subtitle: "Yeni Başlayanlar İçin Adım Adım Kılavuz",
+        statics: "620K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Node.js+API",
+        duration: "20:40"
+    },
+    {
+        title: "İleri JavaScript Konseptleri",
+        subtitle: "Kapatmalar, Promiseler ve Async/Await Anlamak",
+        statics: "900K görüntüleme • 4 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Advanced+JavaScript",
+        duration: "22:50"
+    },
+    {
+        title: "İlk Web Uygulamanızı Yayımlamak",
+        subtitle: "Web Hosting'e Yeni Başlayanlar İçin Kılavuz",
+        statics: "1,3M görüntüleme • 2 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Deploying+Web+App",
+        duration: "17:55"
+    },
+    {
+        title: "Web Geliştirmenin Geleceği",
+        subtitle: "Web Teknolojilerindeki Son Trendler",
+        statics: "1,2M görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Web+Development",
+        duration: "12:34"
+    },
+    {
+        title: "JavaScript ES6 Özellikleri",
+        subtitle: "Modern JavaScript'e Derinlemesine Bir Bakış",
+        statics: "890K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=JavaScript+ES6",
+        duration: "09:45"
+    },
+    {
+        title: "CSS Grid Ustalığı",
+        subtitle: "Kolay Düzen Tasarımı",
+        statics: "500K görüntüleme • 3 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=CSS+Grid",
+        duration: "15:20"
+    },
+    {
+        title: "React'a Giriş",
+        subtitle: "React.js ile Başlarken",
+        statics: "1,5M görüntüleme • 1 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=React+Introduction",
+        duration: "18:10"
+    },
+    {
+        title: "Yeni Başlayanlar İçin Python",
+        subtitle: "Python'u Baştan Öğren",
+        statics: "2M görüntüleme • 3 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Python+for+Beginners",
+        duration: "25:30"
+    },
+    {
+        title: "API'leri Anlamak",
+        subtitle: "Frontend'inizi Backend ile Bağlama",
+        statics: "750K görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Understanding+APIs",
+        duration: "10:15"
+    },
+    {
+        title: "Duyarlı Web Tasarımı",
+        subtitle: "Her Cihazda Çalışan Web Siteleri Yapmak",
+        statics: "1,8M görüntüleme • 5 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=Responsive+Web+Design",
+        duration: "14:05"
+    },
+    {
+        title: "Node.js ile RESTful API Oluşturma",
+        subtitle: "Yeni Başlayanlar İçin Adım Adım Kılavuz",
+        statics: "620K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Node.js+API",
+        duration: "20:40"
+    },
+    {
+        title: "İleri JavaScript Konseptleri",
+        subtitle: "Kapatmalar, Promiseler ve Async/Await Anlamak",
+        statics: "900K görüntüleme • 4 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Advanced+JavaScript",
+        duration: "22:50"
+    },
+    {
+        title: "İlk Web Uygulamanızı Yayımlamak",
+        subtitle: "Web Hosting'e Yeni Başlayanlar İçin Kılavuz",
+        statics: "1,3M görüntüleme • 2 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Deploying+Web+App",
+        duration: "17:55"
+    },
+    {
+        title: "Web Geliştirmenin Geleceği",
+        subtitle: "Web Teknolojilerindeki Son Trendler",
+        statics: "1,2M görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Web+Development",
+        duration: "12:34"
+    },
+    {
+        title: "JavaScript ES6 Özellikleri",
+        subtitle: "Modern JavaScript'e Derinlemesine Bir Bakış",
+        statics: "890K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=JavaScript+ES6",
+        duration: "09:45"
+    },
+    {
+        title: "CSS Grid Ustalığı",
+        subtitle: "Kolay Düzen Tasarımı",
+        statics: "500K görüntüleme • 3 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=CSS+Grid",
+        duration: "15:20"
+    },
+    {
+        title: "React'a Giriş",
+        subtitle: "React.js ile Başlarken",
+        statics: "1,5M görüntüleme • 1 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=React+Introduction",
+        duration: "18:10"
+    },
+    {
+        title: "Yeni Başlayanlar İçin Python",
+        subtitle: "Python'u Baştan Öğren",
+        statics: "2M görüntüleme • 3 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Python+for+Beginners",
+        duration: "25:30"
+    },
+    {
+        title: "API'leri Anlamak",
+        subtitle: "Frontend'inizi Backend ile Bağlama",
+        statics: "750K görüntüleme • 2 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Understanding+APIs",
+        duration: "10:15"
+    },
+    {
+        title: "Duyarlı Web Tasarımı",
+        subtitle: "Her Cihazda Çalışan Web Siteleri Yapmak",
+        statics: "1,8M görüntüleme • 5 gün önce",
+        image: "https://via.placeholder.com/400x300.png?text=Responsive+Web+Design",
+        duration: "14:05"
+    },
+    {
+        title: "Node.js ile RESTful API Oluşturma",
+        subtitle: "Yeni Başlayanlar İçin Adım Adım Kılavuz",
+        statics: "620K görüntüleme • 1 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Node.js+API",
+        duration: "20:40"
+    },
+    {
+        title: "İleri JavaScript Konseptleri",
+        subtitle: "Kapatmalar, Promiseler ve Async/Await Anlamak",
+        statics: "900K görüntüleme • 4 hafta önce",
+        image: "https://via.placeholder.com/400x300.png?text=Advanced+JavaScript",
+        duration: "22:50"
+    },
+    {
+        title: "İlk Web Uygulamanızı Yayımlamak",
+        subtitle: "Web Hosting'e Yeni Başlayanlar İçin Kılavuz",
+        statics: "1,3M görüntüleme • 2 ay önce",
+        image: "https://via.placeholder.com/400x300.png?text=Deploying+Web+App",
+        duration: "17:55"
+    },
 ];
 
