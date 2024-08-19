@@ -10,6 +10,7 @@ import Later from "../pages/later";
 import Likes from "../pages/likes";
 import Downloads from "../pages/downloads";
 import AnaSayfa from "../pages/home";
+import WatchVideo from "../pages/watch-video";
 
 const routes = createBrowserRouter([
     {
@@ -55,6 +56,10 @@ const routes = createBrowserRouter([
     {
         path:'/indirilenler',
         element: <Downloads />
+    },
+    {
+        path:'/watchvideo',
+        element: <WatchVideo />
     },
 ])
 

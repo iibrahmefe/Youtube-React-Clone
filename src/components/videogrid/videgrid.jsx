@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import { IoVolumeMute } from "react-icons/io5";
 import { BsCcSquare } from "react-icons/bs";
 import { PiAppWindowBold } from "react-icons/pi";
-import { VideoList } from "../../const/const";
+// import { VideoList } from "../../const/const";
 
 // * import file
 // ! Animate js Code's
@@ -19,14 +19,14 @@ const item = {
 }
 // ! Animate js Code's
 
-export default function VideoGrid({title,subtitle,image,statistics,duration}) {
+export default function VideoGrid({ title, subtitle, image, statistics, duration }) {
     return (
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             variants={item}
             className="flex flex-col gap-2 ">
-            <a href="#" className="relative overflow-hidden rounded-lg aspect-video  group">
+            <a href="/watchvideo" className="relative overflow-hidden rounded-lg aspect-video  group">
                 <img alt="" src={image} className="block object-cover w-full h-full rounded " />
                 <div className="absolute p-px px-1 text-sm rounded bottom-1 right-1 bg-black/80 ">{duration}</div>
                 <div className="h-full absolute flex flex-col gap-3  transition-colors right-1 top-1 ">
